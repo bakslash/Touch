@@ -23,7 +23,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      counter: 0,
+      
     }
   }
 
@@ -43,8 +43,8 @@ class App extends Component {
         <div class="col text-center">
         <button type="button" className="btn btn-warning"onClick={this.handleUsers}>Get Users</button>
       </div>
-        
-
+      
+<div>
         <table class="table table-striped table-dark">
           <thead >
             <tr>
@@ -69,13 +69,14 @@ class App extends Component {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => ({
-  counter: state.counter,
+  
   users: state.users,
 });
 
