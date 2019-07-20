@@ -1,0 +1,21 @@
+.App{
+    background-color:crimson;
+    margin-top: 0%;
+    padding: 0%;
+    
+}
+.container{
+    margin: 10px;
+    
+ 
+}
+.table{
+    padding-top: 15px;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.App-title{
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}

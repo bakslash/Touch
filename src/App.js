@@ -36,18 +36,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className ="container">
         <header className="text-center">
          
-          <h1 className="App-title">Welcome</h1>
+          <h1 className="App-title">Welcome to Touch</h1>
         </header>
-        <div class="col text-center">
+        <div className="col text-center">
         <button type="button" className="btn btn-warning"onClick={this.handleUsers}>Get Users</button>
       </div>
       
-<div>
-        <table class="table table-striped table-dark">
+<div className="table">
+        <table class="table table-striped table-bordered">
           <thead >
-            <tr>
+            <tr >
               <th>Name</th>
               <th>Email</th>
               <th>Occupation</th>
@@ -58,7 +59,7 @@ class App extends Component {
           </thead>
           <tbody>
             {this.props.users.map(users => (
-              <tr key={Math.random()*100}>
+              <tr key={Math.random()*100}className="table-primary">
                 <td>{users.name}</td>
                 <td>{users.email}</td>
                 <td>{users.occupation}</td>
@@ -70,6 +71,7 @@ class App extends Component {
           </tbody>
         </table>
         </div>
+      </div>
       </div>
     );
   }
